@@ -1,0 +1,42 @@
+name : srl6e
+prefix: ""
+topology:
+ kinds:
+    srl:
+     image: ghcr.io/nokia/srlinux:25.7.2
+     type: ixr-6e
+     license: lic.txt
+ nodes:
+    P1:
+     kind: srl
+    P2:
+     kind: srl
+    P3:
+     kind: srl
+    P4:
+     kind: srl
+    PE1:
+     kind: srl
+    PE2:
+     kind: srl
+    host1:
+     kind: nokia_srsim
+     image: srsim
+     type: ixr-e2c
+     license: lic25.txt
+    host2:
+     kind: nokia_srsim
+     image: srsim
+     type: ixr-e2c
+     license: lic25.txt
+ links:
+    - endpoints: ["P1:e1-1", "P2:e1-1"]
+    - endpoints: ["P1:e1-2", "P3:e1-2"]
+    - endpoints: ["P3:e1-1", "P4:e1-1"]
+    - endpoints: ["P2:e1-2", "P4:e1-2"]
+    - endpoints: ["P1:e1-10", "PE1:e1-10"]
+    - endpoints: ["P3:e1-10", "PE1:e1-11"]
+    - endpoints: ["P2:e1-10", "PE2:e1-10"]
+    - endpoints: ["P4:e1-10", "PE2:e1-11"]
+    - endpoints: ["host1:1/1/c14/1", "PE1:e1-12"]
+    - endpoints: ["host2:1/1/c14/1", "PE2:e1-12"]
