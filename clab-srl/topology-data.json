@@ -1,0 +1,447 @@
+{
+  "name": "srl",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-6663f1205f82",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCvCMJg/dWzyhAWGsRfdwLv7uvUtZ5mFsYKFfDyvdjqQp887rh9t5X2amhlRbWetD2ThycWOSlmoOGYjLB5vS7STzAKVO/cznl7uPL/OXYXWxrITncPTOLN3ghRrtRyKQYfILgS/kIBdYxYeS4bjSitETiUF5yScXLSfIxu6eEUzCYSb3I+gvbLY21CC7V7sNw8qLImL8fHX6uxj05k+nHh8nWlbI6gAIdWGRrOnG0u38phzHjqJ+9dsEjtoGT3CUAHiGT1+WO/vTDPOx4HYwU66vc2WOH6CjgSMa8kVYRCGjYDhCf6XDk6XxrRvLjMGLff3n0EMM2kcoWEtSadPth/E7dQiRdImp4Hg7ze/xKLidaDcfmslh5tR1hmpGQQG9+ttbD9L71VjJXvvYXdO/vuq7HOvMq0AUkiuLMe3Wq6W5hSnkEhOm6dQDeh4sJjbpCmoat4mYGVwztWB4ZXhdc8GCeoh+1oOMchiQmbUbs/N/S0fQ+Aj+OhopFktEHcwfc="],
+  "nodes": {
+    "P1": {
+      "index": "0",
+      "shortname": "P1",
+      "longname": "P1",
+      "fqdn": "P1.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/P1",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.29",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:67:00:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/P1",
+        "clab-node-longname": "P1",
+        "clab-node-name": "P1",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "P2": {
+      "index": "1",
+      "shortname": "P2",
+      "longname": "P2",
+      "fqdn": "P2.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/P2",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.27",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1b",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:25:01:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/P2",
+        "clab-node-longname": "P2",
+        "clab-node-name": "P2",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "P3": {
+      "index": "2",
+      "shortname": "P3",
+      "longname": "P3",
+      "fqdn": "P3.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/P3",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.26",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1a",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:02:02:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/P3",
+        "clab-node-longname": "P3",
+        "clab-node-name": "P3",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "P4": {
+      "index": "3",
+      "shortname": "P4",
+      "longname": "P4",
+      "fqdn": "P4.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/P4",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.31",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:08:03:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/P4",
+        "clab-node-longname": "P4",
+        "clab-node-name": "P4",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PE1": {
+      "index": "4",
+      "shortname": "PE1",
+      "longname": "PE1",
+      "fqdn": "PE1.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/PE1",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.24",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::18",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:99:04:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/PE1",
+        "clab-node-longname": "PE1",
+        "clab-node-name": "PE1",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "PE2": {
+      "index": "5",
+      "shortname": "PE2",
+      "longname": "PE2",
+      "fqdn": "PE2.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/PE2",
+      "kind": "srl",
+      "image": "ghcr.io/nokia/srlinux:25.7.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.28",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:ec:05:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "srl",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/PE2",
+        "clab-node-longname": "PE2",
+        "clab-node-name": "PE2",
+        "clab-node-type": "sxr-1x-44s",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host1": {
+      "index": "6",
+      "shortname": "host1",
+      "longname": "host1",
+      "fqdn": "host1.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/host1",
+      "kind": "nokia_srsim",
+      "image": "srsim",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.30",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::1e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:3c:06:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/host1",
+        "clab-node-longname": "host1",
+        "clab-node-name": "host1",
+        "clab-node-type": "ixr-e2c",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    },
+    "host2": {
+      "index": "7",
+      "shortname": "host2",
+      "longname": "host2",
+      "fqdn": "host2.srl.io",
+      "group": "",
+      "labdir": "/home/cladmin/amjad/srlin/clab-srl/host2",
+      "kind": "nokia_srsim",
+      "image": "srsim",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.25",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::19",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1c:26:07:00:00:00",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "cf4ec16",
+        "clab-mgmt-net-bridge": "br-6663f1205f82",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srsim",
+        "clab-node-lab-dir": "/home/cladmin/amjad/srlin/clab-srl/host2",
+        "clab-node-longname": "host2",
+        "clab-node-name": "host2",
+        "clab-node-type": "ixr-e2c",
+        "clab-owner": "cladmin",
+        "clab-topo-file": "/home/cladmin/amjad/srlin/srl.yaml",
+        "containerlab": "srl"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "P1",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:f6:6b:41",
+          "peer": "z"
+        },
+        "z": {
+          "node": "P2",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:8d:62:ce",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P1",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:ae:3f:a4",
+          "peer": "z"
+        },
+        "z": {
+          "node": "P3",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:94:e4:2d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P3",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:91:d6:1b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "P4",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:19:ed:e5",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P2",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:06:7b:49",
+          "peer": "z"
+        },
+        "z": {
+          "node": "P4",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:29:02:c4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P1",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:b2:0c:15",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE1",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:fc:9c:7c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P3",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:fd:31:76",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE1",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:84:9e:41",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P2",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:26:4e:aa",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE2",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:7a:4e:92",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "P4",
+          "interface": "e1-10",
+          "mac": "aa:c1:ab:c0:63:87",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE2",
+          "interface": "e1-11",
+          "mac": "aa:c1:ab:54:89:37",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "host1",
+          "interface": "e1-1-c14-1",
+          "mac": "aa:c1:ab:b9:8c:50",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE1",
+          "interface": "e1-12",
+          "mac": "aa:c1:ab:87:af:fa",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "host2",
+          "interface": "e1-1-c14-1",
+          "mac": "aa:c1:ab:c7:d6:77",
+          "peer": "z"
+        },
+        "z": {
+          "node": "PE2",
+          "interface": "e1-12",
+          "mac": "aa:c1:ab:9e:74:8a",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

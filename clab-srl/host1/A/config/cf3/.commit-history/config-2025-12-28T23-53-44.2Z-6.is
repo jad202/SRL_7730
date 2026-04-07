@@ -1,0 +1,29 @@
+# TiMOS-B-25.10.R1 both/x86_64 Nokia 7250 IXR Copyright (c) 2000-2025 Nokia.
+# All rights reserved. All use subject to applicable license agreements.
+# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
+# Configuration format version 25.10 revision 0
+
+# Generated 2025-12-28T23:53:44.2Z by admin from 3fff:172:20:20::1
+# Commit ID 6
+#   Committed 2025-12-28T23:53:44.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+
+    configure {
++       router "Base" {
++           static-routes {
++               route 0.0.0.0/0 route-type unicast {
++                   next-hop "192.168.1.2" {
++                       admin-state enable
++                   }
++               }
++           }
++       }
+    }
+
+persistent-indices {
+    description "Persistent indices are maintained by the system and must not be modified."
+    vrtr-if-id {
+        router-name "100" interface-name "to_vpls_100" vrtr-id 1 if-index 2
+    }
+}
+
+# Finished 2025-12-28T23:53:44.2Z

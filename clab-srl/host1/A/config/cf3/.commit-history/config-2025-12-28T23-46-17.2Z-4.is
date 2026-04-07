@@ -1,0 +1,36 @@
+# TiMOS-B-25.10.R1 both/x86_64 Nokia 7250 IXR Copyright (c) 2000-2025 Nokia.
+# All rights reserved. All use subject to applicable license agreements.
+# Built on Thu Oct 30 21:18:22 UTC 2025 by builder in /builds/2510B/R1/panos
+# Configuration format version 25.10 revision 0
+
+# Generated 2025-12-28T23:46:17.2Z by admin from 3fff:172:20:20::1
+# Commit ID 4
+#   Committed 2025-12-28T23:46:17.2Z by admin (MD-CLI) from 3fff:172:20:20::1
+
+    configure {
++       port 1/1/c14 {
++           admin-state enable
++           connector {
++               breakout c1-100g
++           }
++       }
++       port 1/1/c14/1 {
++           admin-state enable
++           ethernet {
++               mode access
++               encap-type dot1q
++           }
++       }
++       service {
++           ies "100" {
++               service-id 100
++               customer "1"
++           }
++       }
+    }
+
+persistent-indices {
+    description "Persistent indices are maintained by the system and must not be modified."
+}
+
+# Finished 2025-12-28T23:46:17.2Z

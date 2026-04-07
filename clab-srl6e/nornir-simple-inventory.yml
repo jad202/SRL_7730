@@ -1,0 +1,41 @@
+---
+host1:
+    username: admin
+    password: NokiaSros1!
+    platform: nokia_srsim
+    hostname: 172.20.20.27
+host2:
+    username: admin
+    password: NokiaSros1!
+    platform: nokia_srsim
+    hostname: 172.20.20.3
+P1:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.28
+P2:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.24
+P3:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.25
+P4:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.26
+PE1:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.29
+PE2:
+    username: admin
+    password: NokiaSrl1!
+    platform: srl
+    hostname: 172.20.20.2
